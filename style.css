@@ -1,0 +1,111 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: #f0f4f8; /* Un color de fondo suave */
+    color: #1e293b;
+}
+
+/* --- Estructura Principal con GRID --- */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; /* Columnas flexibles para centrar el contenido */
+    grid-template-rows: auto 1fr auto; /* Filas para header, main y footer */
+    min-height: 100vh; /* ParaQ que ocupe toda la pantalla */
+    gap: 16px;
+}
+    
+/* HEADER */
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: #ffffff;
+    padding: 0.5rem 2rem; /* Reducimos el padding vertical */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* También podemos achicar un poco la fuente */
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+.header .logo img {
+    height: 40px; /* Hacemos el logo más pequeño */
+    margin-right: 15px;
+}
+
+/* NAVEGACIÓN */
+.header nav a {
+    color: #334155;
+    text-decoration: none;
+    font-size: 1rem; /* Achicamos un poco la fuente de los links */
+    padding: 8px 16px; /* Reducimos el padding de los botones */
+    margin-left: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header nav a:hover {
+    background-color: #e2e8f0;
+    color: #0d47a1;
+}
+
+.header nav a.active {
+    background-color: #0d47a1;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-content h1 {
+    color: #0d47a1;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.main-content h2 {
+    color: #0d47a1;
+    margin-top: 2rem;
+}
+
+.main-content p, .main-content li {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.main-content ol {
+    padding-left: 20px;
+}
+
+.main-content code {
+    background-color: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* FOOTER */
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background-color: #334155;
+    color: #f0f4f8;
+    text-align: center;
+    padding: 1.5rem;
+}
