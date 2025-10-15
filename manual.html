@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Proyecto ACPI 3° Año</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo-indus.png" alt="Logo de la Escuela Industrial 9">
+                <span>Proyecto ACPI</span>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="manual.html" class="active">Manual de Usuario</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h1>Manual de Usuario</h1>
+            <p>Este manual te guiará para poner en marcha y operar el Sistema de Riego Inteligente.</p>
+            
+            <h2>1. Componentes del Sistema</h2>
+            <p>Nuestro prototipo consta de las siguientes partes:</p>
+            <ol>
+                <li><strong>Caja de Control:</strong> Contiene el microcontrolador ESP32, que es el cerebro del sistema.</li>
+                <li><strong>Sensor de Humedad:</strong> Es la varilla que se inserta en la tierra para medir cuánta agua hay.</li>
+                <li><strong>Bomba de Agua:</strong> Pequeña bomba sumergible que se coloca en el depósito de agua.</li>
+                <li><strong>Dashboard Web:</strong> Página accesible desde cualquier dispositivo en la red para ver los datos en tiempo real.</li>
+            </ol>
+
+            <h2>2. Puesta en Marcha</h2>
+            <ol>
+                <li>Colocá la manguera de la bomba en la maceta o sector a regar. Sumergí la bomba en un recipiente con agua.</li>
+                <li>Insertá el sensor de humedad en la tierra de la maceta, asegurándote de que tenga buen contacto.</li>
+                <li>Conectá el sistema a una fuente de alimentación USB de 5V (como un cargador de celular).</li>
+                <li>El sistema se iniciará automáticamente y se conectará a la red WiFi configurada. Un LED en la caja parpadeará para indicar que está funcionando.</li>
+            </ol>
+
+            <h2>3. Monitoreo del Dashboard</h2>
+            <p>Para ver el estado del sistema, abrí un navegador web y andá a la dirección IP del dispositivo (ej: <code>192.168.1.105</code>). Verás lo siguiente:</p>
+            <ul>
+                <li><strong>Nivel de Humedad:</strong> Un medidor o un gráfico que muestra el porcentaje actual de humedad en la tierra.</li>
+                <li><strong>Estado de la Bomba:</strong> Un indicador que te dice si la bomba está <code>ENCENDIDA</code> o <code>APAGADA</code>.</li>
+                <li><strong>Umbral de Riego:</strong> El valor de humedad por debajo del cual el sistema activará el riego automáticamente.</li>
+            </ul>
+
+            <h2>4. Solución de Problemas Frecuentes</h2>
+            <ul>
+                <li><strong>"La bomba no se activa":</strong> Verificá que el nivel de agua en el depósito sea suficiente y que la humedad en la tierra esté por debajo del umbral configurado.</li>
+                <li><strong>"No veo datos en el dashboard":</strong> Asegurate de que el dispositivo esté conectado a la misma red WiFi que tu computadora o celular. Reiniciá el sistema si es necesario.</li>
+            </ul>
+        </main>
+
+        <footer class="footer">
+            <h6>© 2025 - 3° Año ACPI - Escuela Industrial N° 9 | Todos los derechos reservados</h6>
+        </footer>
+    </div>
+</body>
+</html>
+
