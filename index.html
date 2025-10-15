@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Proyecto ACPI 3° Año</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo-indus.png" alt="Logo de la Escuela Industrial 9">
+                <span>Proyecto ACPI</span>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="manual.html">Manual de Usuario</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h1>Sistema de Riego Inteligente para Invernaderos Patagónicos</h1>
+            <img src="https://cdn.portalfruticola.com/2023/12/agua-tecnificada-1024x683.jpg" alt="">
+            <h2>El Problema</h2>
+            <p>En El Calafate, el clima presenta un gran desafío para la producción de hortalizas. Los invernaderos son una solución, pero requieren un uso muy cuidadoso del agua, un recurso que escasea, sobre todo en verano. Un riego manual ineficiente puede desperdiciar agua o, por el contrario, no ser suficiente para las plantas.</p>
+
+            <h2>Nuestra Solución</h2>
+            <p>Desarrollamos un prototipo de sistema de riego automatizado que utiliza la tecnología para optimizar el uso del agua. El sistema monitorea constantemente la humedad de la tierra y activa una bomba de riego solo cuando es estrictamente necesario, asegurando las condiciones ideales para el crecimiento de las plantas con el mínimo consumo de agua posible.</p>
+
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li><strong>Hardware:</strong> Un microcontrolador ESP32 como cerebro, un sensor de humedad de suelo capacitivo para medir las condiciones de la tierra y una mini bomba de agua de 5V.</li>
+                <li><strong>Software:</strong> El control fue programado en el IDE de Arduino (C++). Los datos se envían a través del protocolo MQTT a un dashboard web.</li>
+                <li><strong>Visualización:</strong> Creamos una página web simple con HTML, CSS y JavaScript que muestra en tiempo real la humedad del suelo y el estado de la bomba.</li>
+            </ul>
+
+            <h2>Impacto del Proyecto</h2>
+            <p>Este proyecto no solo demuestra una solución práctica a un problema local, sino que también nos permite aplicar los conocimientos de programación, electrónica y conectividad que aprendimos durante el año. Es un pequeño paso para convertirnos en los futuros técnicos que nuestra comunidad necesita.</p>
+        </main>
+
+        <footer class="footer">
+            <h6>© 2025 - 3° Año ACPI - Escuela Industrial N° 9 | Todos los derechos reservados</h6>
+        </footer>
+    </div></body>
+</html>
+
